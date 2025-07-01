@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.proje-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.proje-wrapper.reverse {
+  flex-direction: row-reverse;
+}
+
+.anaResim, .resim2, .resim3, .resim4, .resim5 {
+  width: 700px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.yazi-wrapper {
+  max-width: 700px;
+  text-align: left;
+}
+
+.tanitim {
+  font-size: 40px;
+  color: #111;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.yaziKutu {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #333;
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 4px solid #a1bff1;
+  border-radius: 8px;
+  list-style: none;
+  font-weight: 500;
+}
+
+.yaziKutu li {
+  margin-bottom: 10px;
+}
+
+.yaziKutu ul {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.yaziKutu ul li {
+  list-style-type: disc;
+  margin-bottom: 8px;
+}
+
+/* Responsive Düzenlemeler */
+@media (max-width: 1200px) {
+  .anaResim,
+  .resim2,
+  .resim3,
+  .resim4,
+  .resim5 {
+    width: 90vw;
+    height: auto;
+    max-height: 400px;
+  }
+  
+  .yazi-wrapper {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .proje-wrapper {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  
+  .proje-wrapper.reverse {
+    flex-direction: column;
+  }
+  
+  .anaResim,
+  .resim2,
+  .resim3,
+  .resim4,
+  .resim5 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+  
+  .yazi-wrapper {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .tanitim {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  
+  .yaziKutu {
+    font-size: 16px;
+    padding: 15px;
+    border-left-width: 3px;
+  }
+}

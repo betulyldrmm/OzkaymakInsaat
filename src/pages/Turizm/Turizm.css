@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
+  color: #2c2c2c;
+  line-height: 1.7;
+}
+
+/* Hero Alanı */
+.hero3 {
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(135deg, #1a365d 0%, #2d5aa0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-text3 {
+  color: white;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.hero-text3 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text3 p {
+  font-size: clamp(1.1rem, 2.8vw, 1.8rem);
+  font-weight: 500;
+  margin-top: 1rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Intro Bölümü */
+.intro-text3 {
+  margin: 4rem auto;
+  padding: 0 2rem;
+  max-width: 1200px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.1rem, 2.8vw, 1.8rem);
+  font-weight: 500;
+  color: #1a1a1a;
+  line-height: 1.7;
+}
+
+.intro-text3 h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: #1a365d;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* İçerik Bölümü */
+.content-section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 4rem auto;
+  max-width: 1400px;
+  padding: 0 2rem;
+}
+
+.content-section3.reverse3 {
+  flex-direction: row-reverse;
+}
+
+.text-box3 {
+  flex: 1;
+  max-width: 600px;
+  text-align: center;
+}
+
+.text-box3 h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1.6rem, 3.5vw, 2.6rem);
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 1.5rem;
+}
+
+.text-box3 p {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(1rem, 2.2vw, 1.6rem);
+  font-weight: 500;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Görsel Alanı */
+.image-box3 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+}
+
+.image-box3 img {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-box3 img:hover {
+  transform: translateY(-0.5rem) scale(1.02);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero3 {
+    height: auto;
+    padding: 3rem 1rem;
+  }
+
+  .content-section3 {
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+  }
+
+  .content-section3.reverse3 {
+    flex-direction: column;
+  }
+
+  .text-box3 {
+    max-width: 100%;
+  }
+
+  .intro-text3 {
+    margin: 2.5rem auto;
+    padding: 0 1rem;
+    font-size: clamp(0.95rem, 3vw, 1.4rem);
+  }
+
+  .image-box3 img {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .hero-text3 h1 {
+    font-size: clamp(1.5rem, 12vw, 3rem);
+    letter-spacing: 1px;
+  }
+
+  .hero-text3 p {
+    font-size: clamp(0.8rem, 3.5vw, 1.2rem);
+  }
+
+  .content-section3 {
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    gap: 1.5rem;
+  }
+
+  .intro-text3 {
+    margin: 2rem auto;
+    padding: 0 0.5rem;
+    font-size: clamp(0.85rem, 3.2vw, 1.2rem);
+  }
+}

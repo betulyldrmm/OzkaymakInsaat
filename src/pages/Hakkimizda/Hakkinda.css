@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  line-height: 1.7;
+}
+
+
+.hero-sectionn {
+  height: 100vh;
+  background-image: url('../../assets/hakkımızda.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 20px;
+}
+
+.hero-content {
+  z-index: 2;
+  color: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 1000px;
+}
+
+.hero-content h1 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 1000;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.hero-content p {
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.8;
+  margin: 0 auto;
+  color: #fff;
+}
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+.scroll-down-arrow .arrow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-left: 4px solid white;
+  border-bottom: 4px solid white;
+  transform: rotate(-45deg);
+  margin-top: 5px;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(10px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(5px);
+  }
+}
+
+.ortayazii {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.ortayazii h1,
+.ortayazii h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #2c3e50;
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 800;
+  margin: 30px 0;
+  letter-spacing: -0.5px;
+}
+
+.ortayazii p {
+  font-size: clamp(1.5rem, 2vw, 1.5rem);
+  font-weight: 500;
+  line-height: 1.8;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+
+.cardd-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px auto;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.cardd {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  flex-wrap: wrap;
+}
+
+.cardd-img {
+  flex: 1;
+  min-width: 300px;
+  height: 530px;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+}
+
+.cardd-text {
+  flex: 1;
+  min-width: 300px;
+  padding: 40px 30px;
+  background-color: #eee8df;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.cardd-text h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2.75rem);
+  margin-bottom: 15px;
+  font-weight: 800;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.cardd-text p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  line-height: 1.8;
+  font-weight: 600;
+}
+
+.guven-kalitee {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.guven-kalitee h2 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  margin-bottom: 20px;
+  font-weight: 800;
+  position: relative;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.guven-kalitee h2::before {
+  content: "🏗️";
+  margin-right: 10px;
+  font-size: 40px;
+}
+
+.guven-kalitee > p {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  max-width: 1200px;
+  margin: 0 auto 60px;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+.guven-kalitee-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.kalite-card {
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 1px solid #edae0f;
+  position: relative;
+}
+
+.kalite-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: #996607;
+}
+
+.kalite-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 123, 255, 0.15);
+}
+
+.kalite-card h3 {
+  font-size: clamp(1.4rem, 2.5vw, 2.2rem);
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.kalite-card p {
+  font-size: clamp(1rem, 1.7vw, 1.3rem);
+  line-height: 1.7;
+  text-align: left;
+  font-weight: 500;
+}
+
+.guven-footer {
+  margin-top: 60px;
+  padding: 30px;
+  background: linear-gradient(135deg, #7f5403,#684400);
+  border-radius: 16px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-family: 'Space Grotesk', sans-serif;
+  text-align: center;
+}
+
+.guven-footer p {
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  font-weight: 600;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-sectionn {
+    height: 70vh;
+    min-height: 500px;
+  }
+  
+  .scroll-down-arrow .arrow {
+    width: 40px;
+    height: 40px;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+  }
+  
+  .ortayazii {
+    padding: 40px 15px;
+  }
+  
+  .cardd {
+    flex-direction: column;
+    max-width: 90%;
+  }
+  
+  .cardd-img {
+    min-width: 100%;
+    height: 250px;
+  }
+  
+  .cardd-text {
+    min-width: 100%;
+    padding: 25px 20px;
+  }
+  
+  .guven-kalitee {
+    padding: 60px 15px;
+  }
+  
+  .guven-kalitee-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .kalite-card {
+    padding: 25px 20px;
+  }
+  
+  .guven-footer {
+    margin-top: 40px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-sectionn {
+    height: 60vh;
+    min-height: 400px;
+  }
+  
+  .scroll-down-arrow {
+    bottom: 20px;
+  }
+  
+  .scroll-down-arrow .arrow {
+    width: 35px;
+    height: 35px;
+    border-left: 2px solid white;
+    border-bottom: 2px solid white;
+  }
+  
+  .ortayazii {
+    padding: 30px 10px;
+  }
+  
+  .cardd-container {
+    padding: 0 10px;
+    gap: 20px;
+  }
+  
+  .cardd {
+    max-width: 95%;
+  }
+  
+  .cardd-img {
+    height: 200px;
+  }
+  
+  .cardd-text {
+    padding: 20px 15px;
+  }
+  
+  .guven-kalitee {
+    padding: 40px 10px;
+  }
+  
+  .kalite-card {
+    padding: 20px 15px;
+  }
+  
+  .guven-footer {
+    padding: 15px;
+  }
+}

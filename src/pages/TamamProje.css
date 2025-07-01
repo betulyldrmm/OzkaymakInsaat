@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.proje-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.proje-wrapper.reverse {
+  flex-direction: row-reverse;
+}
+
+.anaResim,
+.resim2,
+.resim3,
+.resim4,
+.resim5 {
+  width: 700px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.anaResim img.resim-img,
+.resim3 img.resim3-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.yazi-wrapper {
+  max-width: 700px;
+  text-align: left;
+}
+
+.tanitim {
+  font-size: 40px;
+  color: #111;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.yaziKutu {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #333;
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 4px solid #003ea8;
+  border-radius: 8px;
+  list-style: none;
+}
+
+.yaziKutu li {
+  margin-bottom: 10px;
+}
+
+/* Harita Stilleri */
+.harita-wrapper {
+  padding: 50px;
+  text-align: center;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  margin-top: 50px;
+}
+
+.harita-baslik {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #003ea8;
+}
+
+.harita-container {
+  width: 100%;
+  max-width: 1200px;
+  height: 450px;
+  margin: 0 auto;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  border: 3px solid #003ea8;
+}
+
+/* Responsive Tasarım */
+@media (max-width: 1200px) {
+  .anaResim,
+  .resim2,
+  .resim3,
+  .resim4,
+  .resim5 {
+    width: 90vw;
+    height: auto;
+    max-height: 400px;
+  }
+  
+  .yazi-wrapper {
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .proje-wrapper {
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  
+  .proje-wrapper.reverse {
+    flex-direction: column;
+  }
+  
+  .anaResim,
+  .resim2,
+  .resim3,
+  .resim4,
+  .resim5 {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+  }
+  
+  .yazi-wrapper {
+    max-width: 100%;
+    text-align: center;
+  }
+  
+  .tanitim {
+    font-size: 28px;
+  }
+  
+  .yaziKutu {
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  .harita-wrapper {
+    padding: 30px 20px;
+  }
+  
+  .harita-container {
+    height: 300px;
+  }
+}

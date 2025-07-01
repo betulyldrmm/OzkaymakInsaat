@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+.proje-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  padding: 50px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.proje-wrapper.reverse {
+  flex-direction: row-reverse;
+}
+
+
+.anaResim,
+.resim2,
+.resim3 {
+  width: 100%;
+  max-width: 700px;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.anaResim {
+  background-image: url('../../assets/rezidans.png');
+  margin-top: 60px;
+}
+
+.resim2 {
+  background-image: url('../../assets/kiraz.jpg');
+}
+
+.resim3 {
+  background-image: url('../../assets/otel1.jpg');
+}
+
+
+.anaResim img.resim-img,
+.resim3 img.resim3-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.yazi-wrapper {
+  max-width: 700px;
+  text-align: left;
+  padding: 20px;
+}
+
+.tanitim {
+  font-size: 42px;
+  color: #111;
+  font-weight: 900;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+.yaziKutu {
+  font-size: 24px;
+  line-height: 1.7;
+  color: #333;
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 4px solid #003ea8;
+  border-radius: 8px;
+  list-style: none;
+}
+
+.yaziKutu li {
+  margin-bottom: 10px;
+}
+
+
+@media (max-width: 1024px) {
+  .proje-wrapper {
+    flex-direction: column;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .anaResim,
+  .resim2,
+  .resim3 {
+    height: auto;
+    aspect-ratio: 4/3;
+    max-width: 90%;
+  }
+
+  .yazi-wrapper {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .tanitim {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .yaziKutu {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .proje-wrapper {
+    padding: 30px 10px;
+    gap: 20px;
+  }
+
+  .anaResim,
+  .resim2,
+  .resim3 {
+    aspect-ratio: 16/10;
+    max-width: 100%;
+  }
+
+  .tanitim {
+    font-size: 24px;
+  }
+
+  .yaziKutu {
+    font-size: 16px;
+    padding: 15px;
+  }
+
+  .yazi-wrapper {
+    padding: 10px;
+  }
+}

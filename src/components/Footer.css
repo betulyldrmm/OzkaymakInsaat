@@ -1,0 +1,224 @@
+.footer-container {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  width: 100%;
+  padding: 60px 0;
+  color: white;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40 80px;
+  display: flex;
+  gap: 80px;
+  align-items: flex-start;
+}
+
+.left-section {
+  flex: 1;
+  max-width: 800px;
+}
+
+.title-section {
+  margin-bottom: 30px;
+}
+
+.main-title {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.consultation-text {
+  margin-bottom: 40px;
+  color: #b0b0b0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.consultation-text p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.contact-info {
+  color: #ffffff;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  margin: 0;
+  margin-bottom: 8px;
+}
+
+.address {
+  color: #d0d0d0;
+}
+
+.phone {
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 15px !important;
+}
+
+.right-section {
+  flex: 1;
+  max-width: 500px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 15px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #555;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #888;
+  font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-bottom-color: #ffffff;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+  font-family: inherit;
+}
+
+.submit-button {
+  background: transparent;
+  border: 1px solid #888;
+  color: #888;
+  padding: 15px 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 20px;
+  align-self: flex-start;
+}
+
+.submit-button:hover {
+  background: #ffffff;
+  color: #1a1a1a;
+  border-color: #ffffff;
+}
+
+
+@media (max-width: 1024px) {
+  .footer-content {
+    gap: 60px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    padding: 40px 0;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .left-section,
+  .right-section {
+    max-width: 100%;
+  }
+  
+  .main-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .consultation-text,
+  .contact-info {
+    text-align: center;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-content {
+    padding: 0 15px;
+  }
+  
+  .main-title {
+    font-size: 1.8rem;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    padding: 12px 0;
+    font-size: 15px;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 15px;
+  }
+}
+.footer-legal {
+  text-align: center;
+  color: #ccc;
+  font-size: 0.95rem;
+  margin-top: 3rem;
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
