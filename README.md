@@ -1,16 +1,31 @@
- HEAD
-# React + Vite
+# 🏗️ Özkaymak İnşaat — Şirket Web Sitesi
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, **Özkaymak İnşaat** için geliştirilmiş modern, responsive ve kullanıcı odaklı bir web sitesidir.  
+Site; firmanın **inşaat projelerini (tamamlanan, devam eden, yeni başlayacak)** ve firmanın yürüttüğü **diğer sektör faaliyetlerini (ör. otel, ticaret, hizmetler)** detaylı şekilde tanıtmak üzere tasarlanmıştır.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧾 Proje Özeti
+Özkaymak İnşaat Web Sitesi; ziyaretçilere firmanın geçmişten günümüze yaptığı projeleri, şu an yapım aşamasında olan projeleri ve planlanan projeleri kategori bazında gösterir. Ayrıca şirkete ait otel ve diğer sektörlerdeki faaliyetler ayrı sayfalarla tanıtılır. Ziyaretçi, proje detay sayfalarından görseller, teknik bilgiler ve iletişim formlarına erişebilir.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# -ÖzkaymakInsaat
-deb16f22865a9d26dc7c80f8bbcb000dee554c33
+## 🚩 Ana Bölümler
+- **Ana Sayfa** — Kurumsal tanıtım, öne çıkan projeler, hızlı erişim.  
+- **Projeler**  
+  - ✅ *Tamamlanan Projeler* — Teslim edilen konut, ticari bina, altyapı vb. projeler.  
+  - 🚧 *Devam Eden Projeler* — İnşaat aşamasındaki projeler; ilerleme durumu ve görseller.  
+  - 🏗️ *Yeni Başlayacak Projeler* — Yakında başlayacak projelerin kısa tanıtımı.  
+- **Proje Detay Sayfası** — Her proje için: açıklama, teknik özellikler, lokasyon, görsel galeri, ilerleme takvimi, iletişim butonu.  
+- **Diğer Sektörler** — Ticari faaliyetler, bakım-onarım hizmetleri, gayrimenkul yönetimi vb. (firma hangi sektörlerde aktifse listelenecek).  
+- **İletişim** — Email.js ile çalışan iletişim formu, telefon, adres ve sosyal medya bağlantıları.  
+- **Hakkımızda** — Firma misyonu, vizyonu, kalite/güvenlik belgeleri, referanslar.
+
+---
+
+## 🛠 Teknik Detaylar
+- **Frontend:** React.js, HTML5, CSS3 (responsive)  
+- **Dinamik İşlevler:** JavaScript (ES6+)  
+- **E-posta:** Email.js entegrasyonu (iletişim formları için)  
+- **Versiyon Kontrol:** Git / GitHub  
+
