@@ -16,7 +16,7 @@ Site; firmanın **inşaat projelerini (tamamlanan, devam eden, yeni başlayacak)
   - ✅ *Tamamlanan Projeler* — Teslim edilen konut, ticari bina, altyapı vb. projeler.  
   - 🚧 *Devam Eden Projeler* — İnşaat aşamasındaki projeler; ilerleme durumu ve görseller.  
   - 🏗️ *Yeni Başlayacak Projeler* — Yakında başlayacak projelerin kısa tanıtımı.  
-- **Proje Detay Sayfası** — Her proje için: açıklama, teknik özellikler, lokasyon, görsel galeri, ilerleme takvimi, iletişim butonu.  
+- **Proje Detay Sayfası** — Her proje için: açıklama, teknik özellikler, lokasyon, görsel galeri, iletişim butonu.  
 - **Diğer Sektörler** — Ticari faaliyetler, dokumacılık, inşaat vb.
 - **İletişim** — Email.js ile çalışan iletişim formu, telefon, adres ve sosyal medya bağlantıları.  
 - **Hakkımızda** — Firma misyonu, vizyonu, kalite/güvenlik belgeleri, referanslar.
